@@ -20,7 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module encoder4to1_tb(
+module encoder4to1_tb;
 
-    );
-endmodule
+    //DUT inputs are driven by regs
+    
+    reg in_1;
+    reg in_2;
+    reg in_3;
+    reg in_4;
+    wire out;
+    
+    mux4to1 uut(
+        .
