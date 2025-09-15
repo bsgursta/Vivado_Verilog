@@ -1,17 +1,16 @@
+//ALU
 module ALU #
 (
     parameter DATA_WIDTH = 8
 )(
     input logic [DATA_WIDTH-1:0] inA,
-    input logic [DATA_WIDTH-1:0] inB
-    input logic [2:0] OPCode
-    output logic[DATA_WIDTH-1:0] outData
+    input logic [DATA_WIDTH-1:0] inB,
+    input logic [2:0] OPCode,
+    output logic[DATA_WIDTH-1:0] outData,
     output logic[DATA_WIDTH-1:0] hiData
 );
 
 logic [DATA_WIDTH*2-1:0] product;
-
-
 
 always_comb begin
     product = inA * inB;

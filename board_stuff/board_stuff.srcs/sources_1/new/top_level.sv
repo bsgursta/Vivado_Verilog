@@ -1,4 +1,4 @@
-//top level for Peter ALU, Memory, Seven seg
+//top level forALU, Memory, Seven seg
 
 module top_level(
     input wire clk,
